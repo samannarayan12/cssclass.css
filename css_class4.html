@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .img {
+            float: left;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin: 0 16px 12px 0;
+        }
+        .notice {
+            position: relative;
+            height: 280px;
+            box-sizing: border-box;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            padding: 32px 24px;
+            background-color: #f2f7ff;
+            border: 1px solid #b8cce6;
+            margin: 16px 0;
+        }
+        .notice-content {
+            width: 100%;
+        }
+        .badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 5px 9px;
+            background-color: #dcebd9;
+            color: #315b35;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Important Notice</h1>
+    <div class="notice">
+        <span class="badge">School Update</span>
+        <div class="notice-content">
+            <img class="img" src="https://static.vecteezy.com/system/resources/previews/015/529/452/original/100th-day-of-school-cartoon-colored-clipart-free-vector.jpg" alt="School building">
+            <h2>School Announcement</h2>
+            <p>Classes will begin at 8:30 a.m. on Monday. Please arrive on time and bring your books and school supplies. We look forward to seeing everyone for a new week of learning.</p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
