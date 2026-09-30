@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Company Contact Card</title>
+	<style>
+		* { box-sizing: border-box; }
+		body { margin: 0; padding-top: 64px; font: 16px Arial, sans-serif; }
+		header { position: fixed; top: 0; width: 100%; padding: 16px; background: #244b40; color: white; text-align: center; }
+		header h1 { margin: 0; }
+		.profile-section { position: relative; max-width: 800px; height: 300px; margin: 24px auto; overflow: auto; border: 1px solid #999; }
+		.profile-content { width: 70%; height: 100%; padding: 20px; overflow: auto; text-align: center; }
+		.profile-image { float: left; width: 120px; height: 120px; margin: 0 16px 12px 0; object-fit: cover; }
+		.contact-info { position: absolute; top: 0; right: 0; width: 30%; height: 100%; padding: 20px; overflow: auto; border-left: 2px solid #8caf9e; background: #edf4ef; text-align: center; }
+		@media (max-width: 650px) {
+			.profile-section { height: auto; }
+			.profile-content { width: 100%; min-height: 240px; }
+			.contact-info { position: static; width: 100%; border: 0; border-top: 2px solid #8caf9e; }
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<h1>Company Contact Card</h1>
+	</header>
+
+	<main>
+		<section class="profile-section" aria-label="Employee profile">
+			<div class="profile-content">
+				<img class="profile-image" src="https://placehold.co/300x300?text=Employee" alt="Portrait of Jordan Lee">
+				<h2>Jordan Lee</h2>
+				<p class="profile-title">People Operations Manager</p>
+				<p class="profile-description">Jordan helps our teams do their best work by building a welcoming workplace and supporting employees throughout their time with the company.</p>
+			</div>
+
+			<aside class="contact-info" aria-label="Contact information">
+				<h2>Contact Info</h2>
+				<p><strong>Phone</strong><br><a href="tel:+15550142780">(555) 014-2780</a></p>
+				<p><strong>Email</strong><br><a href="mailto:jordan.lee@example.com">jordan.lee@example.com</a></p>
+			</aside>
+		</section>
+	</main>
+</body>
+</html>
